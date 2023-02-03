@@ -1,0 +1,59 @@
+@import "./reset.less";
+@import "./var.less";
+@import "./animation.less";
+
+:root {
+  --van-blue: #24aa42;
+  --van-nav-bar-height: 40px;
+  --van-button-default-height: 40px;
+  --van-nav-bar-icon-color: #333;
+  --van-cell-font-size: 14px;
+}
+.app-container {
+  padding-bottom: 50px;
+  padding-bottom: calc(50px + constant(safe-area-inset-bottom));
+  padding-bottom: calc(50px + env(safe-area-inset-bottom));
+  min-height: calc(100vh - 50px);
+  background-color: var(--color-bg);
+  font-size: 12px;
+  color: var(--color-title1);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.van-nav-bar--fixed {
+  z-index: 10;
+}
