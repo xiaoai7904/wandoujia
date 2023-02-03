@@ -47,7 +47,7 @@ export default defineComponent({
                   <div class="home-tabs">
                     <h1 class="home-tabs-title">{dataItem.title}</h1>
                     <div class="home-tab-swipe">
-                      <Swipe loop={false} width={90} indicator-color="white">
+                      <Swipe loop={false}  indicator-color="white">
                         {dataItem.list.map(
                           (listItem: any, listIndex: number) => (
                             <SwipeItem key={listIndex}>
