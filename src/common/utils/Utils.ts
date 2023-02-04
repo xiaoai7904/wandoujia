@@ -101,6 +101,9 @@ export default class Utils {
       document.execCommand("copy", true);
       document.body.removeChild(textarea);
     }
+  };
 
+  static isWechat = () => {
+    return /MicroMessenger/i.test(window.navigator.userAgent);
   };
 }

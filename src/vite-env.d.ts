@@ -9,4 +9,5 @@ declare module '*.vue' {
 declare interface Window {
   xaCustomEvent: any
   dataJson: Record<string, any>
+  gtag: any
 }

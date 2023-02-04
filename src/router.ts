@@ -9,6 +9,14 @@ const routes: Array<RouteRecordRaw> = [
       title: "首页",
     },
   },
+  {
+    path: "/download",
+    name: "download",
+    component: () => import("@/pages/download"),
+    meta: {
+      title: "下载提示",
+    },
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),
